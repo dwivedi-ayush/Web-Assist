@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "WEB_ASSIST",
+  "version": "1.0",
+  "content_scripts": 
+  [
+    {
+      "matches": 
+      [
+        "<all_urls>"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background":
+  {
+    "scripts":["background.js"]
+  },
+   
+  "permissions": ["tabs"],
+  "browser_action": 
+  {
+    "default_icon": "LOLA.png",
+    "default_popup": "sketch/index.html"
+  }
+}
+
