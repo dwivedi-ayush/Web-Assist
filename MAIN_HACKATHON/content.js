@@ -13,17 +13,20 @@ function gotMessage(message, sender, sendResponse)
           {
             everything[j].style.cssText="border: 5px solid red; background-color: #FFD700";
             everything[j].scrollIntoView(true);
+            window.location.reload();
           }
           if(everything[j].title==message.txt)
           {
             everything[j].style.cssText="border: 5px solid red; background-color: #FFD700";
             everything[j].scrollIntoView(true);
+            window.location.reload();
             
           }
           if(everything[j].innerHTML==message.txt)
           {
             everything[j].style.cssText="background-color: #98FB98";
             everything[j].scrollIntoView(true);
+            window.location.reload();
             
           }
         }
